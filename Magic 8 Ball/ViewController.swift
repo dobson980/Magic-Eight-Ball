@@ -9,17 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var eightBall: UIImageView!
+    
+    let ball = EightBall()
+    let eightBallSound = EightBallSound(filePath: "water", ext: "wav")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        eightBallSound?.prepareSound()
+        
+    }
+    
+    func answerQuestion() {
+        
+        eightBall.image = ball.assignAnswer()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func askBtnPressed(_ sender: Any) {
+        
+        answerQuestion()
+        eightBallSound?.play()
+        
     }
-
-
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        
+        answerQuestion()
+        eightBallSound?.play()
+        
+    }
+    
 }
 

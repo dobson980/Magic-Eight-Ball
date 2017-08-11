@@ -12,6 +12,9 @@
 		353D35CD1F3D759B00363843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353D35CB1F3D759B00363843 /* Main.storyboard */; };
 		353D35CF1F3D759B00363843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353D35CE1F3D759B00363843 /* Assets.xcassets */; };
 		353D35D21F3D759B00363843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353D35D01F3D759B00363843 /* LaunchScreen.storyboard */; };
+		353D35DA1F3D7A8B00363843 /* 8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D35D91F3D7A8B00363843 /* 8Ball.swift */; };
+		353D35DD1F3D7E4600363843 /* water.wav in Resources */ = {isa = PBXBuildFile; fileRef = 353D35DC1F3D7E4300363843 /* water.wav */; };
+		353D35DF1F3D7E6400363843 /* sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D35DE1F3D7E6400363843 /* sound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		353D35CE1F3D759B00363843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		353D35D11F3D759B00363843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		353D35D31F3D759B00363843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353D35D91F3D7A8B00363843 /* 8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8Ball.swift; sourceTree = "<group>"; };
+		353D35DC1F3D7E4300363843 /* water.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = water.wav; path = "Magic 8 Ball/Resources/water.wav"; sourceTree = SOURCE_ROOT; };
+		353D35DE1F3D7E6400363843 /* sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,10 @@
 		353D35C61F3D759B00363843 /* Magic 8 Ball */ = {
 			isa = PBXGroup;
 			children = (
+				353D35DB1F3D7E2300363843 /* Resources */,
 				353D35C71F3D759B00363843 /* AppDelegate.swift */,
+				353D35D91F3D7A8B00363843 /* 8Ball.swift */,
+				353D35DE1F3D7E6400363843 /* sound.swift */,
 				353D35C91F3D759B00363843 /* ViewController.swift */,
 				353D35CB1F3D759B00363843 /* Main.storyboard */,
 				353D35CE1F3D759B00363843 /* Assets.xcassets */,
@@ -62,6 +71,14 @@
 				353D35D31F3D759B00363843 /* Info.plist */,
 			);
 			path = "Magic 8 Ball";
+			sourceTree = "<group>";
+		};
+		353D35DB1F3D7E2300363843 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				353D35DC1F3D7E4300363843 /* water.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353D35DD1F3D7E4600363843 /* water.wav in Resources */,
 				353D35D21F3D759B00363843 /* LaunchScreen.storyboard in Resources */,
 				353D35CF1F3D759B00363843 /* Assets.xcassets in Resources */,
 				353D35CD1F3D759B00363843 /* Main.storyboard in Resources */,
@@ -137,6 +155,8 @@
 			files = (
 				353D35CA1F3D759B00363843 /* ViewController.swift in Sources */,
 				353D35C81F3D759B00363843 /* AppDelegate.swift in Sources */,
+				353D35DA1F3D7A8B00363843 /* 8Ball.swift in Sources */,
+				353D35DF1F3D7E6400363843 /* sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
